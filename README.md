@@ -1,5 +1,5 @@
 #TEAMROLE-4 people two will organised database admistrators will come up with oganising data clients and arrangements of it and other two will do backend developer of the project 
-Teamroles- 4 people one will organised data and one will come up with security implementation and the other one will come up performance optimization and ones will come up with server-side development
+#TECHNOLOGY STACK-4  postgresSQL will allow and store,organise and manage data from its robust and reliable system like web,mobile,graphQL will query language and server-side run forclient request data and Django is high level python web framework that encourages rapid development and clean 
 Technology stack-4 people one will do graphQL and other one will do postgresSQL other one will do django which will be assessing web and other one will over look all ther work which will be put together
 Database Design-one of them will be user and one will work on payment method and and one will be workinging on propeties and and one will work bookings and reviews
 Feature-Breakdown user Management will help by using the app and giving us feedback and tell us where we can improve as company and propety management will help us as company as maintaining and keep up to starndad as for system booking will intitiate transation throughout like payments 
