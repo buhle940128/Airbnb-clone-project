@@ -8,5 +8,5 @@
 #Visual representation is the process of using visual elements like images,charts,graphs and diagrams to convey information,concepts or data
 #Alx-airbnb-database-this data is used for various purposes such as understading market trends, optimizing pricing,and predicting demand as well as for internal use by host and guest
 FILE: Requirements.md
-ALX-airbnb database to manage its online marketplace for short-term rentals,storing information about listings,hosting,guests,bookings, and reviews
+ALX-airbnb database to manage its online marketplace for short-term rentals,storing information about listings,hosting,guests,bookings, and reviews and normalized airbnb schema should minimize redundancy and follow database normalization principles to ensure data integrity and efficient storage.potential redundancies could arise from storing customer information multiple times for each booking or repeating location details across different listing.violation of nomalization could lead to inconsistencies,update anomalies and inefficent queries
 #nomalization.md
