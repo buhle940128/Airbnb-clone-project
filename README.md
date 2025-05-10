@@ -7,3 +7,4 @@
 #ENTITY-Relationship(ER)diagram representation that shows how entities people,objects,places,contepts user and booking entities typically represents a one to many relationship and single can make multiple booking,while each booking is made by only one user and er diagram entity could store information about the booking such as the booking id,date,time, or other relevant details
 #Visual representation is the process of using visual elements like images,charts,graphs and diagrams to convey information,concepts or data
 #Alx-airbnb-database-this data is used for various purposes such as understading market trends, optimizing pricing,and predicting demand as well as for internal use by host and guest
+FILE: Requirements.md
