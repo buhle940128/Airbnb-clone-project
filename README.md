@@ -20,3 +20,12 @@ password hash:VARCHAAR,NOT NULL
 phone number:VARCHAAR,NULL
 role:ENUM(guest,host,admin),NOT NULL
 created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+#PROPERTY
+property id:Primary Key,UUID,Indexed
+host id:Foreign key,references user(user id)
+name:VARCHAAR,NOT NULL
+description:TEXT,NOT NULL
+location:VARCHAAR,NOT NULL
+price pernight:DECIMAL,NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+updated at:TIMESTAMP,ON UPDATE CURRENT TIMESTAMP
