@@ -37,3 +37,9 @@ end date:DATE ,NOT NULL
 total price:DECIMAL,NOT NULL
 status:ENUM(pending,comfirmed,canceled),NOT NULL
 created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+PAYMENT
+payment id:primary key,UUID,Indexed
+booking id:Foreign key,references booking(booking id)
+amount:DECIMAL,NOT NULL
+payment date:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+payment method:ENUM(credit card ,paypal,stripe),NOT NULL
