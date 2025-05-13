@@ -20,7 +20,7 @@ password hash:VARCHAAR,NOT NULL
 phone number:VARCHAAR,NULL
 role:ENUM(guest,host,admin),NOT NULL
 created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
-#PROPERTY
+PROPERTY
 property id:Primary Key,UUID,Indexed
 host id:Foreign key,references user(user id)
 name:VARCHAAR,NOT NULL
@@ -29,3 +29,11 @@ location:VARCHAAR,NOT NULL
 price pernight:DECIMAL,NOT NULL
 created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
 updated at:TIMESTAMP,ON UPDATE CURRENT TIMESTAMP
+BOOKING
+booking id:primary key,UUID,Indexed
+property id:Foreign key,references user(user id)
+start date:DATE, NOT NULL
+end date:DATE ,NOT NULL
+total price:DECIMAL,NOT NULL
+status:ENUM(pending,comfirmed,canceled),NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
