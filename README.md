@@ -43,3 +43,10 @@ booking id:Foreign key,references booking(booking id)
 amount:DECIMAL,NOT NULL
 payment date:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
 payment method:ENUM(credit card ,paypal,stripe),NOT NULL
+REVIEW
+review id:primary key,UUID,Indexed
+property id:Foreign key,references property(property id)
+user id:Foreign key,references user(user id)
+rating:INTEGER,CHECK:rating>=1 AND rating<=5,NOT NULL
+comment:TEXT,NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
