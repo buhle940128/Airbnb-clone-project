@@ -10,3 +10,13 @@
 FILE: Requirements.md the need and specification for designing,implementing,and managing a database system,they encompass various aspects,including data storage access and security which are crucial for ensuring the database effectively support its intended purpose
 #ALX-airbnb database to manage its online marketplace for short-term rentals,storing information about listings,hosting,guests,bookings, and reviews and normalized airbnb schema should minimize redundancy and follow database normalization principles to ensure data integrity and efficient storage.potential redundancies could arise from storing customer information multiple times for each booking or repeating location details across different listing.violation of nomalization could lead to inconsistencies,update anomalies and inefficent queries.
 #Nomalization.md refers to the process of making something normal or regular.transform data to a standard scale for comparison and analysis
+#ENTITIES and Attributes
+User
+User id:primary key,uuid,indexed
+first name:VARCHAR,NOT NULL
+last name:VARCHAAR,NOT NULL
+email:VARCHAAR,UNIQUE,NOT NULL
+password hash:VARCHAAR,NOT NULL
+phone number:VARCHAAR,NULL
+role:ENUM(guest,host,admin),NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
