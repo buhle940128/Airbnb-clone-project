@@ -56,3 +56,7 @@ sender id:Foreign key,references user(user id)
 recipient id:Foreign key,reference user(user id)
 message body:TEXT,NOT NULL
 sent at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+#Constraints
+USER TABLE
+unique constraint on email.
+non-null contraints on required fields
