@@ -63,3 +63,6 @@ non-null contraints on required fields
 PROPERTY TABLE
 foreign key contraint on host id
 non-null contraints on essentials attributes.
+BOOKING TABLE
+FOREIGN KEY constraints on property id and user id.
+status must be one of pending,confirmed,or canceled
