@@ -66,3 +66,90 @@ non-null contraints on essentials attributes.
 BOOKING TABLE
 FOREIGN KEY constraints on property id and user id.
 status must be one of pending,confirmed,or canceled
+PAYMENT TABLE
+foreign key constraint on booking id,ensuring payment is linkined to valid bookings
+REVIEW TABLE
+constraints on rating values(1-5)
+foreign key constraints on property id and user id
+MESSAGE TABLE
+foreign key constraints on sender id and recipient id
+INDEXING
+primary keys:indexed automatically
+additional indexes:email in the user table,property id in the property and bookingtables,booking id in the booking and payment table
+#NORMALIZATION.MD
+USER 
+user id:primary key,UUID,indexed
+first name:VARCHAR,NOT NULL
+last name:VARCHAR,NOT NULL
+email:VARCHAR,UNIQUE,NOT NULL
+password hash:VARCHAR,NOT NULL
+phone number:VARCHAR,NULL
+role:ENUM(guest,host,admin),NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+PROPERTY
+property id:primary key,UUID,indexed
+host id:Foreign key,references user(user id)
+name:VARCHAR,NOT NULL
+description:TEXT,NOT NULL
+location:VARCHAR,NOT NULL
+price pernight:DECIMAL,NOT NULL
+created at:TIMESTAMP,DEFUALT CURRENT TIMESTAMP
+updated at:TIMESTAMP,ON UPDATE CURRENT TIMESTAMP
+BOOKING
+booking id:primary key,UUID,indexed
+property id:Foreign key,references property(property id)
+user id:Foreign key,reference user(user id)
+start date:DATE,NOT NULL
+end date:DATE,NOT NULL
+total price:DECIMAL,NOT NULL
+status:ENUM(pending,comfirmed,canceled),NOT NULL
+PAYMENT
+payment id:primary key,UUID indexed
+booking id:Foreign key,reference booking(booking id)
+amount:DECIMAL,NOT NULL
+payment date:TIMESTAMP DEFUALT CURRENT TIMESTAMP
+payment method:ENUM(credit card,paypal,stripe)NOT NULL
+REVIEW
+review id:primary key,UUID indexed
+property id:Foreign key,reference property(property id)
+user id:Foreign key,reference user(user id)
+rating:INTEGER,CHECK:rating>=1 AND rating <=5,NOT NULL
+comments:TEXT,NOT NULL
+created at:TIMESTAMP DEFUALT CURRENT TIMESTAMP
+MESSAGE
+message id:primary key,UUID indexed
+sender id:Foreign key,reference user(user id)
+recipient id:Foreign key,reference user(user id)
+message body:TEXT,NO NULL
+sent at:TIMESTAMP DEFUALT CURRENT TIMESTAMP
+NORMALIZATION STEP focuses on leveraging the structural elements inherent in these data types while carefully preseving tags and markdown features 
+DATABASE-SCRIPT-001
+USER
+user id:primary key,UUID indexed
+PROPERTY
+property id:primary key,UUID indexed
+host id:Foreign key,reference user(user id)
+BOOKING
+booking id:primary key,UUID indexed
+property id:Foreign key,reference property(property id)
+user id:foreign key,reference user(user id)
+PAYMENT
+payment id:primary key,UUID indexed
+booking id:Foreign key,reference booking(booking id)
+REVIEW
+review id:primary key,UUID indexed
+property id:foreign key,reference property(property id)
+user id:foreign key,reference user(user id)
+MESSAGE
+message id:primary key,UUID indexed
+sender id:Foreign key,reference user(user id)
+recipient id:Foreign key,reference user(user id)
+CONSTRAINTS
+BOOKING TABLE
+Foreign key contraints on property id and user id
+PAYMENT TABLE
+Foreign key contraint on booking id,ensuring payments linked to valid bookings
+INDEXING
+primary key:indexed automatically
+addtional indexes:property and booking
+#FEATURES-and FUNCTIONALITIES
