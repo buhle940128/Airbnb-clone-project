@@ -50,3 +50,9 @@ user id:Foreign key,references user(user id)
 rating:INTEGER,CHECK:rating>=1 AND rating<=5,NOT NULL
 comment:TEXT,NOT NULL
 created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+MESSAGE
+message id:primary key,UUID,Indexed
+sender id:Foreign key,references user(user id)
+recipient id:Foreign key,reference user(user id)
+message body:TEXT,NOT NULL
+sent at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
