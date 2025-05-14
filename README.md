@@ -60,3 +60,6 @@ sent at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
 USER TABLE
 unique constraint on email.
 non-null contraints on required fields
+PROPERTY TABLE
+foreign key contraint on host id
+non-null contraints on essentials attributes.
