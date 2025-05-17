@@ -122,8 +122,8 @@ sender id:Foreign key,reference user(user id)
 recipient id:Foreign key,reference user(user id)
 message body:TEXT,NO NULL
 sent at:TIMESTAMP DEFUALT CURRENT TIMESTAMP
-NORMALIZATION STEP focuses on leveraging the structural elements inherent in these data types while carefully preseving tags and markdown features 
-DATABASE-SCRIPT-001
+#NORMALIZATION STEP focuses on leveraging the structural elements inherent in these data types while carefully preseving tags and markdown features 
+#DATABASE-SCRIPT-001
 USER
 user id:primary key,UUID indexed
 PROPERTY
@@ -152,4 +152,4 @@ Foreign key contraint on booking id,ensuring payments linked to valid bookings
 INDEXING
 primary key:indexed automatically
 addtional indexes:property and booking
-#
+
