@@ -152,4 +152,4 @@ Foreign key contraint on booking id,ensuring payments linked to valid bookings
 INDEXING
 primary key:indexed automatically
 addtional indexes:property and booking
-#FEATURES-and FUNCTIONALITIES
+#
