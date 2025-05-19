@@ -181,3 +181,22 @@ booking id:Foreign key,references booking(booking id)
 amount:DECIMAL,NOT NULL
 payment date:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
 payment method:ENUM(credit card ,paypal,stripe),NOT NULL
+USER TABLE
+unique constraint on email.
+non-null contraints on required fields
+PROPERTY TABLE
+foreign key contraint on host id
+non-null contraints on essentials attributes.
+BOOKING TABLE
+FOREIGN KEY constraints on property id and user id.
+status must be one of pending,confirmed,or canceled
+PAYMENT TABLE
+foreign key constraint on booking id,ensuring payment is linkined to valid bookings
+REVIEW TABLE
+constraints on rating values(1-5)
+foreign key constraints on property id and user id
+MESSAGE TABLE
+foreign key constraints on sender id and recipient id
+INDEXING
+primary keys:indexed automatically
+additional indexes:email in the user table,property id in the property and bookingtables,booking id in the booking and payment table
