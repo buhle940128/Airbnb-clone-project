@@ -152,4 +152,32 @@ Foreign key contraint on booking id,ensuring payments linked to valid bookings
 INDEXING
 primary key:indexed automatically
 addtional indexes:property and booking
-
+#SQL CREATE TABLE
+User id:primary key,uuid,indexed
+first name:VARCHAR,NOT NULL
+last name:VARCHAAR,NOT NULL
+email:VARCHAAR,UNIQUE,NOT NULL
+password hash:VARCHAAR,NOT NULL
+phone number:VARCHAAR,NULL
+role:ENUM(guest,host,admin),NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+property id:Primary Key,UUID,Indexed
+host id:Foreign key,references user(user id)
+name:VARCHAAR,NOT NULL
+description:TEXT,NOT NULL
+location:VARCHAAR,NOT NULL
+price pernight:DECIMAL,NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+updated at:TIMESTAMP,ON UPDATE CURRENT TIMESTAMP
+booking id:primary key,UUID,Indexed
+property id:Foreign key,references user(user id)
+start date:DATE, NOT NULL
+end date:DATE ,NOT NULL
+total price:DECIMAL,NOT NULL
+status:ENUM(pending,comfirmed,canceled),NOT NULL
+created at:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+payment id:primary key,UUID,Indexed
+booking id:Foreign key,references booking(booking id)
+amount:DECIMAL,NOT NULL
+payment date:TIMESTAMP,DEFAULT CURRENT TIMESTAMP
+payment method:ENUM(credit card ,paypal,stripe),NOT NULL
