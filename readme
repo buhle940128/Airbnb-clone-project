@@ -200,4 +200,8 @@ foreign key constraints on sender id and recipient id
 INDEXING
 primary keys:indexed automatically
 additional indexes:email in the user table,property id in the property and bookingtables,booking id in the booking and payment table
-#SQL INSERT
+#SQL INSERTINSERTINTO table_name (column1, column2, ...
+users (id, name, email, password, role)
+INTO bookings (id, guest_id, listing_id, check_in, check_out, total, status)
+OPTIONAL RETURN INSERT INTO users (name, email, password, role) RETURN
+INSERT INTO listings (id, user_id, title, description, location, price, guests, amenities)
