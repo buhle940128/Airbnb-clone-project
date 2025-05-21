@@ -205,3 +205,19 @@ users (id, name, email, password, role)
 INTO bookings (id, guest_id, listing_id, check_in, check_out, total, status)
 OPTIONAL RETURN INSERT INTO users (name, email, password, role) RETURN
 INSERT INTO listings (id, user_id, title, description, location, price, guests, amenities)
+Database-adv-script
+INNER JOIN
+USER
+user id:primary key,UUID,indexed
+first name:VARCHAR,NOT NULL
+last name:VARCHAR,NOT NULL
+PROPERTY
+first name:VARCHAAR,NOT NULL
+property id:Primary Key,UUID,Indexed
+BOOKING
+booking id:primary key,UUID indexed
+property id:Foreign key,reference property(property id)
+user id:foreign key,reference user(user id)
+PAYMENT
+payment id:primary key,UUID indexed
+booking id:Foreign key,reference booking(booking id)
