@@ -217,3 +217,12 @@ total price:DECIMAL,NOT NULL
 status:ENUM(pending,comfirmed,canceled),NOT NULL
 FROM bookings
 INNER JOIN user on booking id foreign key,reference user(user id)
+PROPERTY
+property id:primary key,UUID,indexed
+host id:Foreign key,references user(user id)
+name:VARCHAR,NOT NULL
+description:TEXT,NOT NULL
+location:VARCHAR,NOT NULL
+price pernight:DECIMAL,NOT NULL
+created at:TIMESTAMP,DEFUALT CURRENT TIMESTAMP
+updated at:TIMESTAMP,ON UPDATE CURRENT TIMESTAMP
