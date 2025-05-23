@@ -226,3 +226,26 @@ location:VARCHAR,NOT NULL
 price pernight:DECIMAL,NOT NULL
 created at:TIMESTAMP,DEFUALT CURRENT TIMESTAMP
 updated at:TIMESTAMP,ON UPDATE CURRENT TIMESTAMP
+FROM properties
+LEFT JOIN user on properties id =foreign key id.properties id
+user id:primary key,UUID,indexed
+first name:VARCHAR,NOT NULL
+email:VARCHAR,UNIQUE,NOT NULL
+booking id:primary key,UUID,Indexed
+start date:DATE, NOT NULL
+end date:DATE ,NOT NULL
+FROM
+users
+LEFT JOIN
+bookings ON users.user id =booking user id
+UNION
+User id:primary key,uuid,indexed
+first name:VARCHAR,NOT NULL
+email:VARCHAR,UNIQUE,NOT NULL
+booking id:primary key,UUID,Indexed
+start date:DATE, NOT NULL
+end date:DATE ,NOT NULL
+FROM
+users
+RIGHT JOIN
+booking ON users.user id=booking user id;
