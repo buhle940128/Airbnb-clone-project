@@ -270,5 +270,5 @@ user
 FULL OUTER JOIN
 booking b
 ON
-u.user id=b.user id;
+u.user id=b.userid;
 
