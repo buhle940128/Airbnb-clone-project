@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="7EiEKNMCSCI8ewI3hKdu">
+    <mxGraphModel dx="872" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h4lWl85aih-QfunNKau6-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-1" target="h4lWl85aih-QfunNKau6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-1" value="PROPERTY BOOKING PROCESS&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-2" target="h4lWl85aih-QfunNKau6-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-2" value="SEARCH FOR PROPERTY-user input search e.g location,date guest&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-2" target="h4lWl85aih-QfunNKau6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-5" target="h4lWl85aih-QfunNKau6-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-5" value="VIEW PROPERTY DETAILS-user select a propperty eg avalability,pricing" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-7" target="h4lWl85aih-QfunNKau6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-7" value="SELECT DATES&amp;amp; PROCEED BOOKINGS-user selects booking dates and system check avaliabity" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="320" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-9" target="h4lWl85aih-QfunNKau6-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-9" value="SELECT DATES&amp;amp;PROCEED TO BOOKING-user select booking dates&amp;amp;YES continue &amp;amp;NO shows error return to search" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="440" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h4lWl85aih-QfunNKau6-12" target="h4lWl85aih-QfunNKau6-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-12" value="ENTER BOOKING INFORMATION-user enter guest information&amp;amp;preferences" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="570" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="h4lWl85aih-QfunNKau6-14" value="PAYMENTS PROCESSING-user enters payment details&amp;amp;YES&amp;amp;NO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="710" width="140" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
