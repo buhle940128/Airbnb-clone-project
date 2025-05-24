@@ -238,7 +238,7 @@ FROM
 users
 LEFT JOIN
 bookings ON users.user id =booking user id
-UNION
+FULL OUTER JOIN
 User id:primary key,uuid,indexed
 first name:VARCHAR,NOT NULL
 email:VARCHAR,UNIQUE,NOT NULL
@@ -246,6 +246,9 @@ booking id:primary key,UUID,Indexed
 start date:DATE, NOT NULL
 end date:DATE ,NOT NULL
 FROM
-users
-RIGHT JOIN
-booking ON users.user id=booking user id;
+user
+FULL OUTER JOIN
+booking b
+ON
+u.user id=b.user id;
+
