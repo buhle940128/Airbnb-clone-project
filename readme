@@ -11,6 +11,24 @@
 #ALX-airbnb database to manage its online marketplace for short-term rentals,storing information about listings,hosting,guests,bookings, and reviews and normalized airbnb schema should minimize redundancy and follow database normalization principles to ensure data integrity and efficient storage.potential redundancies could arise from storing customer information multiple times for each booking or repeating location details across different listing.violation of nomalization could lead to inconsistencies,update anomalies and inefficent queries.
 #Nomalization.md refers to the process of making something normal or regular.transform data to a standard scale for comparison and analysis
 #ENTITIES and Attributes
+USER-STORIES MD- Register
+As a user, I want to be able to register an account so that I can access the platform and book or list properties.
+ Login
+As a user, I want to log in to my account so that I can manage my bookings and personal information securely.
+ Search Properties
+As a user, I want to search for properties using filters like location, price, and dates so that I can find suitable places to book.
+ View Property Details
+As a user, I want to view detailed information about a property, including photos and amenities, so that I can make an informed booking decision.
+Book Property
+As a user, I want to book a property for specific dates so that I can reserve my stay in advance.
+Make Payment
+As a user, I want to make a secure payment for my booking so that I can confirm my reservation.
+Cancel Booking
+As a user, I want the ability to cancel my booking within a certain period so that I can get a refund if my plans change.
+View Booking History
+As a user, I want to view my past and upcoming bookings so that I can keep track of my travel schedule.
+ Leave Review
+As a user, I want to leave a review for a property after my stay so that I can share my experience with other users.
 User
 User id:primary key,uuid,indexed
 first name:VARCHAR,NOT NULL
