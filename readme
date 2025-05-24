@@ -30,6 +30,7 @@ As a user, I want to view my past and upcoming bookings so that I can keep track
  Leave Review
 As a user, I want to leave a review for a property after my stay so that I can share my experience with other users.
 #DESIGN A DATA FLOW DIAGRAM FOR YOUR FEATURES AND FUNCTIONALITIES
+#DESIGN A CHARTFLOW FOR SYSTEM PROCESSES
 User
 User id:primary key,uuid,indexed
 first name:VARCHAR,NOT NULL
