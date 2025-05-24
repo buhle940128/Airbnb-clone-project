@@ -225,7 +225,7 @@ users (id, name, email, password, role)
 INTO bookings (id, guest_id, listing_id, check_in, check_out, total, status)
 OPTIONAL RETURN INSERT INTO users (name, email, password, role) RETURN
 INSERT INTO listings (id, user_id, title, description, location, price, guests, amenities)
-Database-adv-script
+#Database-adv-script
 INNER JOIN
 BOOKING
 booking id:primary key,UUID,indexed
